@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/function/functions.dart';
-import 'package:netflix_clone/widgets/customSlider.dart';
+import 'package:netflix_clone/widgets/custom_slider.dart';
 
 class CustomProfile extends StatefulWidget {
   const CustomProfile({super.key});

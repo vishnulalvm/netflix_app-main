@@ -35,7 +35,7 @@ Stack cardHome() {
 TextButton homeButton() {
   return TextButton.icon(
       style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(
+          backgroundColor: WidgetStateProperty.all(
         Colors.white24,
       )),
       onPressed: () {},
@@ -53,8 +53,8 @@ TextButton playButtonHome() {
   return TextButton.icon(
       onPressed: () {},
       style:
-          ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.white)),
-      icon: Icon(
+          ButtonStyle(backgroundColor: WidgetStateProperty.all(Colors.white)),
+      icon: const Icon(
         Icons.play_arrow,
         color: Colors.black,
       ),

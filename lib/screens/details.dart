@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:netflix_clone/function/functions.dart';
-import 'package:netflix_clone/widgets/customSlider.dart';
+import 'package:netflix_clone/widgets/custom_slider.dart';
 
 // ignore: must_be_immutable
 class DetailsPage extends StatefulWidget {
@@ -107,7 +107,7 @@ class _DetailsPageState extends State<DetailsPage> {
                   style: TextStyle(color: Colors.black),
                 ),
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.white),
+                  backgroundColor: WidgetStateProperty.all(Colors.white),
                 ),
               ),
             ),
@@ -129,7 +129,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 ),
                 style: ButtonStyle(
                   backgroundColor:
-                      MaterialStateProperty.all(Colors.grey.shade500),
+                      WidgetStateProperty.all(Colors.grey.shade500),
                 ),
               ),
             ),

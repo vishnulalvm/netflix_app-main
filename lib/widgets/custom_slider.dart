@@ -1,14 +1,12 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix_clone/apikey/api.dart';
 import 'package:netflix_clone/screens/details.dart';
 
 class CustomSlider extends StatefulWidget {
-  String title;
-  List<Map<String, dynamic>> sliderlist;
-  CustomSlider({super.key, required this.title, required this.sliderlist});
+ final String title;
+ final List<Map<String, dynamic>> sliderlist;
+  const CustomSlider({super.key, required this.title, required this.sliderlist});
 
   @override
   State<CustomSlider> createState() => _CustomSliderState();
@@ -32,7 +30,7 @@ class _CustomSliderState extends State<CustomSlider> {
                   fontSize: 18,
                   fontWeight: FontWeight.w600),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             SizedBox(

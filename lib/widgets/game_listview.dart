@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix_clone/apikey/api.dart';
 import 'package:netflix_clone/screens/details.dart';
 
+// ignore: camel_case_types
 class Curstom_list extends StatefulWidget {
   Curstom_list({
     super.key,
@@ -23,8 +24,6 @@ class _CurstomlistState extends State<Curstom_list> {
     return Expanded(
         child: (widget.searchText.isEmpty)
             ? ListView.builder(
-                // scrollDirection: Axis.vertical,
-                //physics: BouncingScrollPhysics(),
                 itemCount: widget.fullMovies.length,
                 itemBuilder: (context, index) {
                   return InkWell(

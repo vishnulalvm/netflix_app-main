@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:netflix_clone/function/functions.dart';
 import 'package:netflix_clone/screens/home.dart';
 import 'package:netflix_clone/widgets/comming_soon.dart';
@@ -35,7 +34,7 @@ class _NewsHotScreenState extends State<NewsHotScreen> {
                   ))
             ],
             bottom: PreferredSize(
-              preferredSize: Size.fromHeight(40),
+              preferredSize: const Size.fromHeight(40),
               child: ValueListenableBuilder(
                   valueListenable: tabNotifier,
                   builder: (context, isTabBarVisible, _) {
@@ -44,7 +43,7 @@ class _NewsHotScreenState extends State<NewsHotScreen> {
                             first: 'Comming Soon🍿',
                             second: 'Most Watching🔥',
                           )
-                        : SizedBox();
+                        : const SizedBox();
                   }),
             ),
           ),

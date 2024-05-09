@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class HomeTabBar extends StatefulWidget {
   HomeTabBar({
     super.key,
@@ -31,9 +32,9 @@ class _HomeTabBarState extends State<HomeTabBar> {
             ? Tab(
                 text: '${widget.third}',
               )
-            : SizedBox()
+            : const SizedBox()
       ],
-      labelPadding: EdgeInsets.symmetric(horizontal: 16.0),
+      labelPadding: const EdgeInsets.symmetric(horizontal: 16.0),
       dividerColor: Colors.black,
       unselectedLabelColor: Colors.white,
       indicatorColor: Colors.white,

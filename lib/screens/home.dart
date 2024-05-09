@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:netflix_clone/function/functions.dart';
 import 'package:netflix_clone/widgets/card_home.dart';
-import 'package:netflix_clone/widgets/customSlider.dart';
+import 'package:netflix_clone/widgets/custom_slider.dart';
 import 'package:netflix_clone/widgets/tab_bar.dart';
 
 ValueNotifier<bool> tabNotifier = ValueNotifier(true);
